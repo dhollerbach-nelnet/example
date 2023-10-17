@@ -4,10 +4,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@v4
 
     - name: Run action
-      uses: dhollerbach-nelnet/github-actions@master
+      uses: dhollerbach-nelnet/github-actions@main
       with:
         client-id: f14afd0f-c319-49db-a7b4-814f2568187d
         client-secret: EnC8Q~LrddPeq7YvPnS478pa0GQGJ42kyQyuUcrg
