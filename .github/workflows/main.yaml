@@ -1,0 +1,17 @@
+name: My Workflow
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+
+    - name: Run action
+      uses: dhollerbach-nelnet/github-actions@master
+      with:
+        client-id: f14afd0f-c319-49db-a7b4-814f2568187d
+        client-secret: EnC8Q~LrddPeq7YvPnS478pa0GQGJ42kyQyuUcrg
+        local-file-path: ./test.txt
+        sharepoint-drive-name: Documents
+        sharepoint-file-path: test/test.txt
+        sharepoint-site-name: DaveTest
