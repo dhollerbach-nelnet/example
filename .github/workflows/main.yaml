@@ -1,17 +1,29 @@
-name: My Workflow
-on: [push, pull_request]
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v4
+name: on-main
+concurrency:
+  group: ${{ github.workflow }}
 
-    - name: Run action
-      uses: dhollerbach-nelnet/github-actions@main
-      with:
-        client-id: f14afd0f-c319-49db-a7b4-814f2568187d
-        client-secret: EnC8Q~LrddPeq7YvPnS478pa0GQGJ42kyQyuUcrg
-        local-file-path: ./test.txt
-        sharepoint-drive-name: Documents
-        sharepoint-file-path: test/test.txt
-        sharepoint-site-name: DaveTest
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  id-token: write
+
+env:
+  TERRAFORM_VERSION: 1.6.1
+
+jobs:
+  businessApproval:
+    name: Business Approval
+    runs-on: ubuntu-latest
+    environment: test
+    steps:
+      - run: echo Running business approval...
+
+  test:
+    name: test
+    runs-on: ubuntu-latest
+    needs: businessApproval
+    steps:
+      - run: echo Tuh duh
