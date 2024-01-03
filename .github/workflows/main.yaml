@@ -28,11 +28,14 @@ jobs:
     environment: test
     steps:
       - run: |
+          import os
           import subprocess
-          for k, v in ALLSECRETS.items():
+
+          SECRETS = os.environ['ALL_SECRETS']
+          for k, v in SECRETS.items():
             cmd = 'echo {}={} >> $GITHUB_ENV'.format(k, v)
             proc = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
         shell: python
         env:
-          ALLSECRETS: ${{ toJSON(secrets) }}
+          ALL_SECRETS: ${{ toJSON(secrets) }}
 
