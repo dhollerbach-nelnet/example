@@ -25,6 +25,7 @@ jobs:
     name: test
     runs-on: ubuntu-latest
     # needs: businessApproval
+    environment: test
     steps:
       - run: echo $ALLSECRETS
         env:
