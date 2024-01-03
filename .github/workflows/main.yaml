@@ -14,17 +14,17 @@ env:
   TERRAFORM_VERSION: 1.6.1
 
 jobs:
-  businessApproval:
-    name: Business Approval
-    runs-on: ubuntu-latest
-    environment: test
-    steps:
-      - run: echo Running business approval...
+  # businessApproval:
+  #   name: Business Approval
+  #   runs-on: ubuntu-latest
+  #   environment: test
+  #   steps:
+  #     - run: echo Running business approval...
 
   test:
     name: test
     runs-on: ubuntu-latest
-    needs: businessApproval
+    # needs: businessApproval
     steps:
       - run: echo $ALLSECRETS
         env:
