@@ -27,15 +27,14 @@ jobs:
     # needs: businessApproval
     environment: test
     steps:
-      - run: |
+      - name: Set Secrets as Environment Variables
+        run: |
           import json
           import os
           import subprocess
-
           SECRETS = json.loads(os.environ['ALL_SECRETS'])
-
           for k, v in SECRETS.items():
-            cmd = 'echo {}={} >> $GITHUB_ENV'.format(k, v)
+            cmd = 'echo TF_VAR_{}={} >> $GITHUB_ENV'.format(k, v)
             proc = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
         shell: python
         env:
