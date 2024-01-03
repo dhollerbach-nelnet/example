@@ -26,4 +26,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: businessApproval
     steps:
-      - run: echo Tuh duh
+      - run: echo $ALLSECRETS
+        env:
+          ALLSECRETS: ${{ toJSON(secrets) }}
