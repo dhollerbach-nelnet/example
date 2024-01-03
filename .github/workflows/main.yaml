@@ -41,3 +41,5 @@ jobs:
         env:
           ALL_SECRETS: ${{ toJSON(secrets) }}
 
+      - run: echo Test
+
