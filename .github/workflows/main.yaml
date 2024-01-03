@@ -27,6 +27,12 @@ jobs:
     # needs: businessApproval
     environment: test
     steps:
-      - run: echo $ALLSECRETS
+      - run: |
+          import subprocess
+          for k, v in ALLSECRETS.items():
+            cmd = 'echo {}={} >> $GITHUB_ENV'.format(k, v)
+            proc = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
+        shell: python
         env:
           ALLSECRETS: ${{ toJSON(secrets) }}
+
