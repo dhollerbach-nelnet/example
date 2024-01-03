@@ -28,10 +28,12 @@ jobs:
     environment: test
     steps:
       - run: |
+          import json
           import os
           import subprocess
 
-          SECRETS = os.environ['ALL_SECRETS']
+          SECRETS = jsonloads(os.environ['ALL_SECRETS'])
+
           for k, v in SECRETS.items():
             cmd = 'echo {}={} >> $GITHUB_ENV'.format(k, v)
             proc = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
