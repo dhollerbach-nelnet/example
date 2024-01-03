@@ -32,7 +32,7 @@ jobs:
           import os
           import subprocess
 
-          SECRETS = jsonloads(os.environ['ALL_SECRETS'])
+          SECRETS = json.loads(os.environ['ALL_SECRETS'])
 
           for k, v in SECRETS.items():
             cmd = 'echo {}={} >> $GITHUB_ENV'.format(k, v)
