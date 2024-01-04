@@ -1,8 +1,8 @@
 import json
-import os
 import subprocess
+import sys
 
-SECRETS = json.loads(os.environ['ALL_SECRETS'])
+SECRETS = json.loads(sys.argv[1])
 
 for k, v in SECRETS.items():
   cmd = 'echo TF_VAR_{}={} >> $GITHUB_ENV'.format(k, v)

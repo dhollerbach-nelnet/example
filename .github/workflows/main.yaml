@@ -29,10 +29,7 @@ jobs:
     steps:
       - name: Set Secrets as Environment Variables
         working-directory: scripts
-        run: set-env-var.py
-        shell: python
-        env:
-          ALL_SECRETS: ${{ toJSON(secrets) }}
+        run: python3 set-env-var.py ${{ toJSON(secrets) }}
 
       - run: echo Test
 
