@@ -27,6 +27,8 @@ jobs:
     # needs: businessApproval
     environment: test
     steps:
+      - uses: actions/checkout@v3
+
       - name: Set Secrets as Environment Variables
         working-directory: scripts
         run: python3 set-env-var.py ${{ toJSON(secrets) }}
