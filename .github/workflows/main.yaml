@@ -14,17 +14,9 @@ env:
   TERRAFORM_VERSION: 1.6.1
 
 jobs:
-  # businessApproval:
-  #   name: Business Approval
-  #   runs-on: ubuntu-latest
-  #   environment: test
-  #   steps:
-  #     - run: echo Running business approval...
-
   test:
     name: test
     runs-on: ubuntu-latest
-    # needs: businessApproval
     environment: test
     steps:
       - uses: actions/checkout@v3
@@ -33,4 +25,3 @@ jobs:
         run: python3 scripts/set-env-var.py '${{ toJSON(secrets) }}'
 
       - run: echo Test
-
