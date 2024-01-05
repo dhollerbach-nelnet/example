@@ -18,10 +18,12 @@ jobs:
     name: test
     runs-on: ubuntu-latest
     environment: test
+    env:
+      URL: ${{ secrets.URL }}
     steps:
       - uses: actions/checkout@v3
 
       - name: Set Secrets as Environment Variables
         run: python3 scripts/set-env-var.py '${{ toJSON(secrets) }}'
 
-      - run: echo "Url - ${{ secrets.URL }}"
+      - run: echo "Url - $URL"
