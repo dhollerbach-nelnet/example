@@ -24,4 +24,4 @@ jobs:
       - name: Set Secrets as Environment Variables
         run: python3 scripts/set-env-var.py '${{ toJSON(secrets) }}'
 
-      - run: echo Test
+      - run: echo "Url - ${{ secrets.URL }}"
