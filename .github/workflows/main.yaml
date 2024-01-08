@@ -6,39 +6,18 @@ on:
   push:
     branches: [main]
 
-permissions:
-  contents: read
-  id-token: write
-  pull-requests: write
-
-env:
-  TERRAFORM_VERSION: 1.6.1
-
 jobs:
   terraform-plan:
     name: Terraform Plan
     runs-on: ubuntu-latest
-    environment: test
+    environment: ${{ matrix.environments}}
+    strategy:
+      matrix:
+        environments: [dev, test]
+        regions: [us-east-1, us-west-2]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v4
-        with:
-          aws-region: us-east-1
-          role-to-assume: ${{ secrets.AWS_IAM_ROLE_ARN }}
-
-      - name: Terraform Setup
-        uses: hashicorp/setup-terraform@v2
-        with:
-          terraform_version: ${{ env.TERRAFORM_VERSION }}
-          terraform_wrapper: false
-
-      - name: Terraform Init
-        run: terraform init
-
-      - name: Terraform Plan
-        id: plan
-        run: terraform plan -no-color
-        env:
-          TF_VAR_BUCKET: dhollerbach-1h89vdshb1cwe87b1
+      - run: |
+          echo "Environment: ${{ matrix.environments }}"
+          echo "Region: ${{ matrix.regions }}"
