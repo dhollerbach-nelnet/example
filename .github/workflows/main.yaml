@@ -1,25 +1,47 @@
 name: on-main
-concurrency:
-  group: ${{ github.workflow }}
 
 on:
   push:
     branches: [main]
 
+permissions:
+  contents: read
+  id-token: write
+
+env:
+  TERRAFORM_VERSION: 1.6.6
+
 jobs:
   terraform-plan:
     name: Terraform Plan
     runs-on: ubuntu-latest
-    environment: ${{ matrix.environments}}
+    environment: ${{ matrix.environments }}
+    concurrency:
+      group: Terraform Plan (${{ matrix.environments }})
     strategy:
       matrix:
-        environments: [dev, test]
-        regions: [us-east-1, us-west-2]
-      fail-fast: true
-      max-parallel: 2
+        environments: [dev]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
 
-      - run: |
-          echo "Environment: ${{ matrix.environments }}"
-          echo "Region: ${{ matrix.regions }}"
+      - uses: oNaiPs/secrets-to-env-action@v1
+        with:
+          secrets: ${{ toJSON(secrets) }}
+          prefix: TF_VAR_
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-region: us-east-1
+          role-to-assume: ${{ secrets.AWS_IAM_ROLE_ARN }}
+
+      - name: Terraform Setup
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: ${{ env.TERRAFORM_VERSION }}
+
+      - name: Terraform Init
+        run: terraform init
+
+      - name: Terraform Plan
+        run: terraform plan -no-color | grep -v "Refreshing state...\|Reading...\|Read complete after"
