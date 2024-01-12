@@ -20,7 +20,7 @@ jobs:
       group: Terraform Plan (${{ matrix.environments }})
     strategy:
       matrix:
-        environments: [dev]
+        environments: [test]
     steps:
       - uses: actions/checkout@v3
 
