@@ -39,7 +39,7 @@ jobs:
         run: terraform init
 
       - name: Terraform Plan
-        run: terraform plan -no-color
+        run: terraform plasn -no-color
 
 
   terraform-plan:
