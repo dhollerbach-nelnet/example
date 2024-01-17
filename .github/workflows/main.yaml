@@ -39,7 +39,7 @@ jobs:
         run: terraform init
 
       - name: Terraform Plan
-        run: terraform plan -no-color | grep -v "Refreshing state...\|Reading...\|Read complete after"
+        run: terraform plsan -no-color
 
 
   terraform-plan:
