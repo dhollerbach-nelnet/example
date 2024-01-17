@@ -5,5 +5,5 @@ provider "aws" {
 variable "BUCKET_NAME" {}
 
 resource "aws_s3_bucket" "example" {
-  bucket = var.BUCKET_NAME
+  bucket = "12yefgg124rnb2q4"
 }
