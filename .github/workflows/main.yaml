@@ -17,7 +17,6 @@ jobs:
     name: Terraform Plan
     runs-on: ubuntu-latest
     environment: ${{ matrix.environments }}
-    needs: test
     concurrency:
       group: Terraform Plan (${{ matrix.environments }})
     strategy:
