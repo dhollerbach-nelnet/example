@@ -1,0 +1,830 @@
+openapi: 3.0.0
+info:
+    title: Bank Sitemap
+    version: 1.0.0
+servers:
+    - url: https://www.nelnetbank.com
+      description: Prod Server
+paths:
+    /home-improvement-loans/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /commercial-certificate-of-deposits/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /commercial-high-yield-savings-accounts/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /hil-electronic-communications-consent/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /private-student-loan-campaign-parents/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /cell-phone-consent-agreement/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /auto-debit-terms-conditions/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /one-time-payment-terms-conditions/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /military-benefits/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /mobile-opt-in/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /how-this-works-college-major-calculator/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/college-major-calculator/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /partners/commonbond-generic-school-loans/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /private-student-loan-campaign-grad/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /private-student-loan-campaign-undergrad/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /private-student-loan-campaign/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /partners/mentor-school-loans/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/glossary/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /glossary/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /partners/lendgrow/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/nurturing-student-loan-seeds-through-life-and-repayment/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /cares-act-infographic/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/cares-act-federal-student-loan-relief-expires-heres-what-you-need-to-know/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /fao/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /partners/college-aid-direct/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /partners/sparrow-school-loans/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /partners/sparrow/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/student-loan-refinance-calculator/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /home-copy/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /partners/usn-school-loans/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /partners/usn/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/unique-ways-to-pay-back-your-student-loans/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/understanding-your-student-loan-grace-period-and-how-to-make-the-most-of-it/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/student-loan-refinancing-and-consolidation-which-one-is-right-for-you/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/student-loan-refinance-choosing-your-private-student-loan-repayment-options-part-ii/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/student-loan-refinance-choosing-your-private-student-loan-repayment-options-part-i/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/student-loan-consolidation-vs-refinancing-whats-the-difference/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/student-loan-refinance-how-to-look-beyond-the-numbers/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/when-to-consider-refinancing-student-loans/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/are-you-ready-for-student-loan-repayment/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/3-student-loan-mistakes-to-avoid-in-repayment/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /private-student-loans/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /partners/ubt-school-loans/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /partners/nerdwallet-school-loans/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /partners/nelnet-school-loans/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /partners/bmoharris-school-loans/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/financial-literacy-for-millennials-tips-for-making-smart-financial-decisions-in-your-20s-and-30s/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/get-your-financial-house-in-order/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /nbasd/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/your-credit-report-hard-inquiry-vs-soft-inquiry-whats-the-difference/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/what-you-can-do-to-improve-your-credit-score/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/what-careers-give-you-the-most-bang-for-your-buck/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/ways-to-pay-for-college-in-a-pandemic/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/useful-identity-theft-protection-tips/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/types-of-private-student-loan-options/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/personal-loans-can-help-cure-post-holiday-credit-card-blues/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/new-year-new-financial-perspective/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/planning-for-the-new-year/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/need-help-paying-for-college-we-have-tips-for-filing-the-fafsa/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/its-time-to-make-sure-your-finances-are-on-track/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/its-tax-season-remember-to-claim-your-education-tax-benefits/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/is-a-loan-cosigner-right-for-you-navigating-the-benefits-of-a-cosigner/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/i-submitted-my-fafsa-form-what-can-i-expect-to-pay-for-college/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/how-to-save-money-on-your-student-loans/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/how-can-a-student-loan-cosigner-help-you/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/how-are-interest-rates-determined-on-student-loans/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/have-a-great-spring-break-without-breaking-the-bank/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/five-things-college-students-wish-they-had-known-about-financial-aid/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/finding-student-loans-and-preparing-for-next-semester/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/find-money-for-college-when-scholarships-arent-enough/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/7-steps-to-boosting-your-credit-score/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/scholarship-search-tool/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/how-to-use-your-tax-return-effectively-to-reduce-the-total-of-your-student-loan-payments/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/understanding-your-financial-aid-award-letter/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/understanding-your-credit-report-and-what-student-loan-lenders-look-for/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/a-guide-to-important-student-loan-terms/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/5-facts-students-should-know-about-financial-aid/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/student-loan-repayment-what-to-expect-as-you-prepare-to-graduate/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/nelnet-bank-directs-borrowers-in-need-to-resources-about-covid-19-and-student-loans/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/why-good-credit-is-crucial/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/take-control-of-your-credit-cards/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/learning-to-budget-for-a-brighter-future/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/how-to-smartly-spend-your-tax-refund/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/10-best-budget-planning-tips-for-college-students/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/five-spending-tips-to-avoid-post-holiday-budget-woes/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/back-to-school-finances-and-budgeting-be-prepared-and-informed-when-you-start-school/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/going-to-graduate-school-options-for-managing-undergraduate-student-loan-debt/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /good-credit-score/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /learning-center/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /paying-for-college/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /identity-verification/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /electronic-communications-consent/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /save-with-student-loan-refi/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /student-loan-consolidation/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /partners/ufi-from-nelnet/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /terms/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /online-policy-faqs/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /privacycenter/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /medschool-loan-refinance/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /cosigners/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /partners/scholarnet/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /partners/nerdwallet/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /partners/bmo/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /partners/ubt/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /partners/benefited/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /loan-refinancing-risks/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /refinance-parent-plus-loans/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /partner/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /disclosures/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /website-privacy-notice/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /privacy-notice/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /student-loan-refinance-calculator/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /contact-us/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /opt-out/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /terms-of-use/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /faqs/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /leadership/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /notfound/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /error/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /high-yield-cds/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /about-nelnet-bank/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /student-loan-refinance/:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /resource-category/budgeting:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /resource-category/repaying-cosigning:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /resource-category/credit:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /resource-category/debt-relief:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /resource-category/interest-rate:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /resource-category/life-career:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /resource-category/paying-for-college:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /resource-category/paying-cosigning:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /resource-category/paying-private-loans:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /resource-category/private-loans:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /resource-category/refinancing:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /resource-category/repaying-student-loans:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /resource-category/repayment:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
+    /resource-category/saving:
+        get:
+            summary: Placeholder
+            responses:
+                default:
+                    description: Placeholder
